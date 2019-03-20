@@ -42,3 +42,27 @@
     font-style: normal;
 
 }
+
+body{
+    
+}
+
+header{
+    background-color: black;
+}
+
+.navbar-brand img{
+    width: 79px;
+    height: 27px;
+}
+
+.banner-home{
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vertical-center{
+    height: auto;
+    min-height: 696px;
+}
