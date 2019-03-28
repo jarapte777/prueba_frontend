@@ -16,6 +16,16 @@
 
 }
 
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
     font-family: 'open_sanssemibold';
     src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
@@ -56,6 +66,11 @@ h1, h2{
     text-transform: uppercase;
 }
 
+h4{
+    font-family: 'open_sansbold';
+    font-size: 20px;
+}
+
 header{
     background-color: black;
 }
@@ -63,6 +78,7 @@ header{
 .title-home{
     font-family: 'ralewayregular';
     font-size: 36px;
+    margin-bottom: 28px;
 }
 
 /*Comienza el nav*/
@@ -128,7 +144,7 @@ header{
     padding: 100px 0;
 }
 
-.awesome-title hr{
+.title-hr{
     width: 64px;
     border: 1px solid #ff8b38;
 }
@@ -137,14 +153,61 @@ header{
     font-family: 'open_sansregular';
     font-size: 14px;
     color: #86878b;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+.awesome-description img{
+    margin-bottom: 30px;
+}
+
+.awesome-description p{
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    color: #86878b;
 }
 /*Termina sección Awesome*/
 
 
-
+/*Comienza sección Pricing*/
 .pricing{
     background-color: #f5f5f5;
+    padding: 100px 0;
 }
+
+.pricing-title p{
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    color: #86878b;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+.card-head{
+    text-align: center;
+    background-color: #333333;
+}
+
+.card-head ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.plan-title{
+    font-family: 'open_sansbold';
+    color: white;
+    font-size: 20px;
+    padding: 15px 0px;
+    border-bottom: 1px solid white;
+}
+
+.plan-value{
+    font-family: 'ralewaybold';
+    font-size: 94px;
+    color: white;
+}
+
+/*Termina sección Pricing*/
 
 .download{
     background-image: url("../images/download.jpg");
