@@ -23,16 +23,16 @@
                             <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#awesome" data-ancla="awesome">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#pricing" data-ancla="pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="#download" data-ancla="stylish">Stylish</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact" data-ancla="contact">Contact</a>
                         </li>
                         </ul>
                     </div>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section class="awesome">
+    <section class="awesome" id="awesome">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center awesome-title">
@@ -65,14 +65,14 @@
                 </div>
             </div>
             <div class="row text-center awesome-description">
-                <div class="col-md-4">
+                <div class="col-md-4 awesome-hover">
                     <img src="images/bombillo.png" alt="icon Thoughful Design">
                     <h4>
                         Thoughful Design
                     </h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio cumque, veritatis quo illum doloremque.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 awesome-hover">
                     <img src="images/teclado.png" alt="icon Well Crafted">
                     <h4>
                         Well Crafted
@@ -81,7 +81,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo at sit nihil fugit optio quaerat!
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 awesome-hover">
                     <img src="images/rayo.png" alt="icon Easy to Customize">
                     <h4>
                         Easy to Customize
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center pricing-title">
@@ -170,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="download">
+    <section class="download" id="download">
         <div class="content">
             <div class="row align-items-center">
                 <div class="col-md-12 text-center">
@@ -182,7 +182,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center contact-title">
@@ -235,8 +235,36 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+
+$('.nav-link').click(function() {
+
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+
+        var $target = $(this.hash);
+
+        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+        if ($target.length) {
+
+            var targetOffset = $target.offset().top;
+
+            $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+            return false;
+
+       }
+
+  }
+
+});
+
+});
+</script>
 </body>
 </html>

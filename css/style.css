@@ -135,6 +135,13 @@ header{
     font-size: 15px;
 }
 
+.download-button:hover{
+    text-decoration: none;
+    background: #ff8c2d;
+    border-color: #ff8c2d;
+    color: white;
+}
+
 /*Termina el banner*/
 
 
@@ -158,8 +165,23 @@ header{
     margin-bottom: 60px;
 }
 
+.awesome-description{
+    transition: all 0.2s ease-in-out 0s;
+}
+
 .awesome-description img{
     margin-bottom: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.awesome-hover:hover img{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 5px 20px 0px #f8cbac;
+}
+
+.awesome-hover:hover h4{
+    color: #ff8c2d;
 }
 
 .awesome-description p{
@@ -187,6 +209,15 @@ header{
 .card-head{
     text-align: center;
     background-color: #333333;
+}
+
+.card{
+    -webkit-transition: .2s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 5px 7px #81817e;
 }
 
 .card-head ul{
@@ -316,6 +347,14 @@ header{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f4c9aa;
+    outline: 0;
+    box-shadow: 0px 5px 10px 0 rgb(255, 217, 191);
+}
+
 .form-container{
     display: flex;
     justify-content: space-between;
@@ -345,6 +384,11 @@ header{
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+.send:hover {
+    background: #f07016;
+    box-shadow: 0px 1px 5px #f07e2e9c;
+}
 /*Termina la sección contact*/
 
 footer{
@@ -367,6 +411,10 @@ footer{
     list-style: none;
     padding: 0;
     margin: 0 auto;
+}
+
+.redes-container img:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .redes-container li{
